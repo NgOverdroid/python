@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #00b207;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: oppo;
+}
+
+@font-face {
+    font-family: oppo;
+    src: url(../font/OPPOSansVN/OPPOSansVN/OpenType-PS/OPPOSans-VN-Regular.otf);
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes indent {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: 10px;
+    }
+}
