@@ -437,7 +437,8 @@ footer {
     text-indent: 45px;
 }
 
-.address-create__row .data input {
+.address-create__row .data input,
+.address-create__row .data select {
     float: right;
     margin-right: 45px;
     height: 30px;
