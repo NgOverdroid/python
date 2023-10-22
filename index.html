@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/base.css">
-    <script src="togglediv.js"></script>
 </head>
 <body>
     <header>
@@ -202,15 +201,24 @@
                         Họ và tên: <input type="text">
                     </div>
                     <div class="data">
-                        Tỉnh/Thành phố: <input type="text">
+                        Tỉnh/Thành phố: 
+                        <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                            <option value="" selected>Chọn</option>           
+                        </select>
                     </div>
                 </div>
                 <div class="address-create__row">
                     <div class="data">
-                        Quận/Huyện: <input type="text">
+                        Quận/Huyện: 
+                        <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                            <option value="" selected>Chọn</option>
+                        </select>
                     </div>
                     <div class="data">
-                        Phường xã: <input type="text">
+                        Phường xã: 
+                        <select class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                            <option value="" selected>Chọn</option>
+                        </select>
                     </div>
                 </div>
                 <div class="address-create__row">
@@ -246,6 +254,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="script.js"></script>
 
     <footer>
         <div class="footer__top">
