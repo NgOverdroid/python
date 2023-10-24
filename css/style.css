@@ -163,10 +163,6 @@
     margin-right: 6px;
 }
 
-.body {
-    height: 800px;
-}
-
 footer {
     position: relative;
 }
@@ -293,18 +289,19 @@ footer {
 
 /* address-list */
 
-.body {
+.address-wrapper {
     display: flex;
-    justify-content: center;
     margin: 30px 0;
+    padding: 0 160px;
     height: fit-content;
 }
 
-.body__menu {
+.address-wrapper__menu {
     width: 200px;
     height: fit-content;
-    border: 2px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
     margin: 10px;
+    border-radius: 8px;
 }
 
 .title {
@@ -317,7 +314,6 @@ footer {
 .list__item{
     font-size: 14px;
     padding: 10px 0;
-    /* margin: 10px 0; */
 }
 
 .list__item a {
@@ -335,14 +331,16 @@ footer {
     font-weight: bold;
 }
 
-.body__address-book {
+.address-wrapper__address-book {
     height: fit-content;
     width: 960px;
-    border: 2px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
     margin: 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
-.body__address-book .title{
+.address-wrapper__address-book .title{
     display: flex;
     padding: 0;
 }
@@ -356,7 +354,7 @@ footer {
 .mini-title{
     width: 50%;
     padding: 10px 0;
-    border-bottom: 2px solid rgb(223, 239, 223);
+    border-bottom: 2px solid #dbdbdb;
 }
 
 .list div:hover, .mini-title:hover {
@@ -379,6 +377,14 @@ footer {
 
 .address-list__item div {
     margin: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.address-list__item .name{
+    text-align: left;
+    text-indent: 14px;
 }
 
 .address-list__next-page {
@@ -444,6 +450,8 @@ footer {
     height: 30px;
     width: 200px;
     border: 1px solid #333;
+    position: relative;
+    top: -4px;
 }
 
 .address-create__row textarea {
@@ -451,6 +459,7 @@ footer {
     max-width: 680px;
     min-width: 680px;
     right: 45px;
+    top: -4px;
     margin: 25px;
     border: 1px solid #333;
 }
@@ -460,14 +469,15 @@ footer {
     width: 50%;
     padding: 25px;
     text-indent: 45px;
+    display: flex;
 }
 
 .address-create__radio .option {
-    margin: 5px 0 0 215px;
+    margin-top: 3px;
 }
 
 .address-create__btn {
-    margin: 35px 0 0 145px;
+    margin: 20px 0 0 260px;
     color: rgb(223, 239, 223);
     border-radius: 15px;
     background-color: var(--primary-color);
