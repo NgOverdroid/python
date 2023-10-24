@@ -161,11 +161,7 @@
 
 .phone__icon {
     margin-right: 6px;
-}
-
-.body {
-    height: 800px;
-}
+}   
 
 footer {
     position: relative;
@@ -293,18 +289,19 @@ footer {
 
 /* order-history */
 
-.body {
+.address-wrapper {
     display: flex;
-    justify-content: center;
     margin: 30px 0;
+    padding: 0 160px;
     height: fit-content;
 }
 
-.body__menu {
+.address-wrapper__menu {
     width: 200px;
     height: fit-content;
     border: 2px solid #dbdbdb;
     margin: 10px;
+    border-radius: 5px;
 }
 
 .title {
@@ -339,14 +336,16 @@ footer {
     font-weight: bold;
 }
 
-.body__order-history {
+.address-wrapper__order-history {
     width: 960px;
     height: fit-content;
     border: 2px solid #dbdbdb;
     margin: 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
-.body__order-history .title{
+.address-wrapper__order-history .title{
     padding: 20px 0;
     border-bottom: 2px solid #dbdbdb;
     border-left: 3px solid var(--primary-color);
