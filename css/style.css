@@ -318,18 +318,18 @@ footer {
     color: white;
 }
 
-.address-wrapper {
+.user-info-wrapper {
     display: flex;
     margin: 30px 0;
     padding: 0 160px;
     height: fit-content;
 }
 
-.address-wrapper__menu {
+.user-info-wrapper__menu {
     width: 200px;
     height: fit-content;
     border: 2px solid #dbdbdb;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     border-radius: 5px;
 }
 
@@ -365,16 +365,16 @@ footer {
     font-weight: bold;
 }
 
-.address-wrapper__order-history {
-    width: 960px;
+.user-info-wrapper__order-history {
+    width: 980px;
     height: fit-content;
     border: 2px solid #dbdbdb;
-    margin: 10px;
+    margin: 10px 0 10px 10px;
     border-radius: 5px;
     padding-bottom: 10px;
 }
 
-.address-wrapper__order-history .title{
+.user-info-wrapper__order-history .title{
     padding: 20px 0;
     border-bottom: 2px solid #dbdbdb;
     border-left: 3px solid var(--primary-color);
