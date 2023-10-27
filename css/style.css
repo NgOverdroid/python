@@ -287,7 +287,7 @@ footer {
     padding-bottom: 14px;
 }
 
-/* order-history */
+/* profile */
 .nav-link {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.00) 91.31%), url(../img/nav-link-img.jpg);
     height: 120px;
@@ -321,7 +321,7 @@ footer {
 .address-wrapper {
     display: flex;
     margin: 30px 0;
-    padding: 0 160px;
+    padding:0 0 0 160px;
     height: fit-content;
 }
 
@@ -365,13 +365,59 @@ footer {
     font-weight: bold;
 }
 
+.address-body__profile{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    display: grid;
+    grid-template-columns: 480px 490px;
+    grid-gap: 10px;
+    margin-top:30px;
+    height: fit-content;
+}
+.profilename, .profileinfo{
+    border: 2px solid #dbdbdb;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.anh, .anh__icon{
+    width: 80px;
+    margin-top:10px;
+    margin-bottom:5px;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 50%;
+}
+.profilename__ele, .profileinfo__ele{
+    padding:10px;
+}
+.profilename__ele{
+    text-align: center;
+}
+
+.edit:link {
+    text-decoration: none;
+    color:#00B207;
+}
+.edit:visited{
+    text-decoration: none;
+    color:#00B207;
+}
+.ten{
+    font-weight: bold;
+}
+
 .address-wrapper__order-history {
     width: 960px;
+    box-sizing: border-box;
     height: fit-content;
     border: 2px solid #dbdbdb;
     margin: 10px;
     border-radius: 5px;
     padding-bottom: 10px;
+    grid-column: span 2;
 }
 
 .address-wrapper__order-history .title{
@@ -418,35 +464,6 @@ footer {
     padding: 7px 11px;
     font-size: 10px;
     margin: 3px;
-    border-radius: 50%;
+    color:#00B207;
 }
 
-.content__next-page .disable {
-    background-color: #dbdbdb;
-    border: 1px solid #dbdbdb;
-    color: gray;
-}
-
-.content__next-page .enable {
-    background-color: white;
-    border: 1px solid #dbdbdb;
-    color: black;
-}
-
-.content__next-page .numpage {
-    background-color: white;
-    border: 1px solid white;
-    color: black;
-}
-
-.content__next-page .selected_numpage {
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    color: white;
-}
-
-.content__next-page .numpage:hover, .content__next-page .enable:hover {
-    background-color: rgb(223, 239, 223);
-    border: 1px solid rgb(223, 239, 223);
-    color: black;
-}
