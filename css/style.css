@@ -478,19 +478,21 @@ footer {
     margin-right: 45px;
     height: 30px;
     width: 200px;
-    border: 1px solid #333;
+    border: 1px solid #dbdbdb;
     position: relative;
     top: -4px;
+    text-indent: 5px;
 }
 
 .address-create__row textarea {
     position: relative;
-    max-width: 680px;
-    min-width: 680px;
+    max-width: 690px;
+    min-width: 690px;
     right: 45px;
     top: -4px;
     margin: 25px;
-    border: 1px solid #333;
+    border: 1px solid #dbdbdb;
+    text-indent: 5px;
 }
 
 .address-create__radio {
