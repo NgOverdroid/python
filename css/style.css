@@ -472,6 +472,7 @@ footer {
     padding: 5px;
     margin-left: 2px;
     border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 
 .blog-header__counter {
@@ -490,6 +491,7 @@ footer {
     transition: transform 0.2s, box-shadow 0.2s;
     padding-bottom: 5px;
     box-shadow: 0 2px 4px #ccc;
+    border-radius: 6px;
 }
 
 .blog-card:hover {
