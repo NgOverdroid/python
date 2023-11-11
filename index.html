@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="/addinfo/css/style.css">
+    <link rel="stylesheet" href="/addinfo/css/base.css">
+    <script src="/addinfo/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -79,7 +80,7 @@
     </header>
 
         
-    <div class="order-history-body">
+    <div class="address-body">
         <div class="nav-link">
             <div class="nav-link-text">
                 <a href=""><i class="fa-solid fa-house"></i></a>
@@ -89,131 +90,198 @@
                 <a class="nav-link--selected" href="">Lịch sử đặt hàng</a>
             </div>
         </div>
-        <div class="user-info-wrapper">
-            <div class="user-info-wrapper__menu">
-                <div class="title">Thông tin cá nhân</div>
-                <div class="list">
-                    <div class="list__item">
-                        <a href="">
-                            <i class="list__icon fa-solid fa-address-card"></i>
-                            <span>Tài khoản</span>
-                        </a>
-                    </div>
-                    <div class="list__item">
-                        <a href="">
-                            <i class="list__icon fa-solid fa-address-book"></i>
-                            <span>Sổ địa chỉ</span>
-                        </a>
-                    </div>
-                    <div class="list__item selected_item">
-                        <a href="">
-                            <i class="list__icon fa-solid fa-wallet"></i>
-                            <span>Lịch sử đặt hàng</span>
-                        </a>
-                    </div>
-                    <div class="list__item">
-                        <a href="">
-                            <i class="list__icon fa-solid fa-heart "></i>
-                            <span>Danh sách yêu thích</span>
-                        </a>
-                    </div>
-                    <div class="list__item">
-                        <a href="">
-                            <i class="list__icon fa-solid fa-arrow-right-from-bracket"></i>
-                            <span>Đăng xuất</span>
-                        </a>
-                    </div>
-                </div>
+    </div>
+
+    <!--Body shop 2-->
+    <div class="body">
+        <div class="addinfo">
+            <div class="addinfo_gallery">
+            <button class="addinfo_gallery__switchbutton" id="up_button"><i class="fa-solid fa-chevron-up"></i></button>
+            <img src="/Shop2/img/cam.jpg" alt="" class="addinfo_gallery__pic selected" id="img_one">
+            <img src="/Shop2/img/matcattraicam2.jpg" alt="" class="addinfo_gallery__pic" id="img_two">
+            <img src="/Shop2/img/traicambirdeyeview.png" alt="" class="addinfo_gallery__pic" id="img_three"></button>
+            <img src="/Shop2/img/traicamtrongtay.jpg" alt="" class="addinfo_gallery__pic" id="img_four"></button>
+            <button class="addinfo_gallery__switchbutton" id="down_button"><i class="fa-solid fa-chevron-down"></i></button>
             </div>
-    
-            <div class="user-info-wrapper__order-history">
-                <div class="title">
-                    <i class="fa-solid fa-clock-rotate-left title__icon"></i>
-                    Lịch sử đặt hàng
+            <div class="addinfo_img"><img src="/Shop2/img/cam.jpg" alt="" id="addinfo_img__image"></div>
+            <div class="addinfo_info">
+                <h1>Cam</h1>
+                <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><p class="addinfo_info__starnote">5 đánh giá</p>
+                <p class="addinfo_info__gia">20.000vnd/kg</p>
+                <hr>
+                <div class="addinfo_info__brand">
+                <p>Thương hiệu:</p>
+                <img src="/Shop2/img/PsychoactiveWeeds.webp" alt="">
+                <p id="chiase--right">Chia sẻ:</p>
+                <button><i class="fa-brands fa-facebook"></i></button>
+                <button><i class="fa-brands fa-reddit"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-pinterest"></i></button>
                 </div>
-                <div class="content">
-                    <div class="content__item header">
-                        <div>ID đơn hàng</div>
-                        <div>Ngày</div>
-                        <div>Tổng giá</div>
-                        <div>Tình trạng</div>
-                        <div></div>
+                <p class="addinfo_info__info">Cam ngọt (Citrus sinensis) là một loài thực vật có hoa trong họ Cửu lý hương. Loài này được (L.) Osbeck mô tả khoa học đầu tiên năm 1765.</p>
+                <hr>
+                <div class="addinfo_buy">
+                    <div class="addinfo_buy__amount">
+                        <button id="addinfo_buy__amount--decrease"><i class="fa-solid fa-minus"></i></button>
+                        <span id="addinfo_buy__amount--number">0</span>
+                        <button id="addinfo_buy__amount--increase"><i class="fa-solid fa-plus"></i></button>
                     </div>
-                    <div class="content__item">
-                        <div>#3933</div>
-                        <div>1/11/2023</div>
-                        <div>331.300đ (5 sản phẩm)</div>
-                        <div>Đang xử lý</div>
-                        <div class="details">
-                            <a href="">Chi tiết</a>
+                    <div class="addinfo_buy__addtocart">
+                        <button >Thêm vào giỏ hàng <i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="addinfo_buy__wishlist">
+                        <button  ><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="addinfo_info__tag">
+                    <p>Phân loại: Trái cây</p>
+                    <p>Thẻ: Trái cây, Rau, Việt Nam, Xanh, Chay</p>
+                </div>
+            </div>            
+        </div>
+   
+        <div class="about">
+            <div class="about_button">
+                <button class="about_button__button" id="description__button" onclick="changeDescription()">Miêu tả</button>
+                <button class="about_button__button" id="comments__button" onclick="changeComments()">Bình luận</button>
+            </div>
+            <div class="about_section" id="zero">
+                <div class="description" id="one">
+                    <div class="description__text">
+                        <p>Cam là một loại quả của nhiều loài cây có múi khác nhau thuộc họ Cửu lý hương (Rutacea) (xem danh sách các loài thực vật được gọi là cam); nó chủ yếu đề cập đến Citrus × sinensis, mà còn được gọi là cam ngọt, để phân biệt với Citrus × aurantium có liên quan, được gọi là cam chua. Cam ngọt sinh sản vô tính (apomixis thông qua phôi nucellar); giống cam ngọt phát sinh do đột biến.</p>
+    
+                        <p>Cam là trái lai từ quả chanh và quả bưởi.Bộ gen lục lạp, và do đó là dòng ngoại, là bộ gen của bưởi. Quả cam ngọt đã có trình tự bộ gen đầy đủ.</p>
+                        <p>Cam có nguồn gốc ở một khu vực bao gồm Nam Trung Quốc, Đông Bắc Ấn Độ và Myanmar, và người ta nhắc đến cam ngọt sớm nhất trong văn học Trung Quốc vào năm 314 trước Công nguyên. Tính đến năm 1987, cây cam được coi là cây ăn quả được trồng nhiều nhất trên thế giới. Cây cam được trồng rộng rãi ở các vùng khí hậu nhiệt đới và cận nhiệt đới để cho quả ngọt. Quả của cây cam có thể ăn tươi hoặc chế biến lấy nước cốt hoặc vỏ thơm. Tính đến năm 2012, cam ngọt chiếm khoảng 70% sản lượng cam quýt.</p>
+                        <p>Mỗi 140g chứa:</p>
+                    <ul>
+                        <li>Calo: 66</li>
+                        <li>Vitamin C: 92% DV</li>
+                        <li>Tinh bột: 14.8g</li>
+                        <li>Đường: 12g</li>
+                        <li>Canxi: 5% DV</li>   
+                    </ul>
+                    </div>
+                    <div class="description__video">
+                        <iframe width="500" height="345" src="//www.youtube.com/embed/bPCPTUw3Oy4">
+                        </iframe>
+                        <div id="below_video">
+                            <div>
+                                <i class="fa-solid fa-tags"></i>
+                                <p>30% khuyến mãi</p>
+                                <p>Tiết kiệm đến 30%</p>
+                            </div> 
+                            <div>
+                                <i class="fa-brands fa-pagelines"></i>
+                                <p>100% Hữu cơ</p>
+                                <p>Vâng, 100% nói thật</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="content__item">
-                        <div>#5054</div>
-                        <div>29/10/2023</div>
-                        <div>61.400đ (1 sản phẩm)</div>
-                        <div>Đang vận chuyển</div>
-                        <div class="details">
-                            <a href="">Chi tiết</a>
+                </div>
+                <div class="comments" id="two">
+                    <div class="comment">
+                        <div>
+                        <img src="/addinfo/img/bia.jpg" alt="" class="comment__profileimage">
+                        <p class="comment__username">Trần Thị Thu Phương</p>
+                        <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><p class="addinfo_info__starnote"></p>
                         </div>
+                        <p class="comment__content">Cam Ranh là một thành phố ven biển trực thuộc tỉnh Khánh Hòa, Việt Nam</p>
                     </div>
-                    <div class="content__item">
-                        <div>#5028</div>
-                        <div>23/10/2023</div>
-                        <div>613.500đ (4 sản phẩm)</div>
-                        <div>Hoàn thành</div>
-                        <div class="details">
-                            <a href="">Chi tiết</a>
+                    <div class="comment">
+                        <div>
+                        <img src="/addinfo/img/gigacat.jpg" alt="" class="comment__profileimage">
+                        <p class="comment__username">Mai Thị Thảo</p>
+                        <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><p class="addinfo_info__starnote"></p>
                         </div>
+                        <p class="comment__content">CAM PU CHIA  💅🤝🙏💅💅💅💅</p>
                     </div>
-                    <div class="content__item">
-                        <div>#4600</div>
-                        <div>19/10/2023</div>
-                        <div>85.900đ (1 sản phẩm)</div>
-                        <div>Hoàn thành</div>
-                        <div class="details">
-                            <a href="">Chi tiết</a>
+                    <div class="comment">
+                        <div>
+                        <img src="/addinfo/img/tranquoctoan.jpg" alt="" class="comment__profileimage">
+                        <p class="comment__username">Trần Quốc Toản</p>
+                        <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><p class="addinfo_info__starnote"></p>
                         </div>
+                        <p class="comment__content">Tôi đã bóp nát quả cam</p>
                     </div>
-                    <div class="content__item">
-                        <div>#4152</div>
-                        <div>10/10/2023</div>
-                        <div>1.418.500đ (13 sản phẩm)</div>
-                        <div>Hoàn thành</div>
-                        <div class="details">
-                            <a href="">Chi tiết</a>
+                    <div class="comment">
+                        <div>
+                        <img src="/addinfo/img/leducnghia.jpg" alt="" class="comment__profileimage">
+                        <p class="comment__username">Lê Đức Nghĩa</p>
+                        <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><p class="addinfo_info__starnote"></p>
                         </div>
+                        <p class="comment__content">Cam ơn, aricamto gozai masu, sugoi, subarashii, sutekina, sussy baka.</p>
                     </div>
-                    <div class="content__item">
-                        <div>#8811</div>
-                        <div>5/10/2023</div>
-                        <div>846.700đ (7 sản phẩm)</div>
-                        <div>Hoàn thành</div>
-                        <div class="details">
-                            <a href="">Chi tiết</a>
+                    <button id="comments__loadbutton">Load more</button>
+                    <div class="comment" id="hidden_comment">
+                        <div>
+                        <img src="/addinfo/img/sadboymuaha.jpg" alt="" class="comment__profileimage">
+                        <p class="comment__username">Sad boy mùa hạ</p>
+                        <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><p class="addinfo_info__starnote"></p>
                         </div>
+                        <p class="comment__content">Anhe em ạ, bạn thân em đã chuyển hoàn toàn hệ thống tư tưởng của nó sang femboy giáo. </p>
+                        <p class="comment__content">hôm qua bọn em đang pvp minecraft và mỗi lần em đánh nó là mỗi lần nó ***; nó làm nhiều quá em bảo nó câm mẹ đi 
+                        nhưng mà thú thật em tự chấm mình 10 trong thang độ cứng Mohs. Nó bảo hi hi ok tao dừng đồ baka, ê nhìn nè. em thu nhỏ màn hình để xem cái gì thì lạy chúa yasuo nó đang stream ** *** bằng webcam 4k.
+                        đúng lúc bạn gái em bước vào, nhưng bằng phản xạ của một thằng nghiện game 12 năm(em cũng nghiện cocain nhưng mà nó không liên quan) em đã tắt màn hình rất nhanh. Nhưng mà bồ em vẫn thấy được nhờ vì nó cũng có phản xạ của con nghiện 
+                        (nó nghiện methamphetamine, nó không nghiện game), nó la lên rồi hỏi [data expunged][censored][censored][censored] rồi thằng bạn em nó hỏi ************** rồi bọn em chia tay rồi </p>
+                        <p class="comment__content">dạ em xin hỏi em có nên uhmmm... auughhummmm.... chuyển ngành sang kỹ sư khoan mỏ dầu??? Nó với em quen cũng lâu rồi 🧐😩🤔 các bác senpai cho xin chút ý kiến ạ </p>
                     </div>
-                    <div class="content__item">
-                        <div>#3536</div>
-                        <div>28/9/2023</div>
-                        <div>1.374.300đ (2 sản phẩm)</div>
-                        <div>Hoàn thành</div>
-                        <div class="details">
-                            <a href="">Chi tiết</a>
-                        </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="related_items">
+            <h2>Sản Phẩm Liên Quan</h2>
+            <div class="collage">
+                <div class="collage-pic">
+                    <a href="#"><img src="/Shop2/img/anhdao.jpg" alt="" class="collage-pic__img"></a>
+                    <a href="#" class="collage-pic__name">Anh đào</a>
+                    <p>Giá: 20.000/kg</p>
+                    <div class="collage-pic__star">
+                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
                     </div>
-                    <div class="content__next-page">
-                        <a href="#" class="previous disable">&#8249;</a>
-                        <a href="#" class="selected_numpage">1&nbsp;</a>
-                        <a href="#" class="numpage">2</a>
-                        <a href="#" class="numpage">3</a>
-                        <a href="#" class="next enable">&#8250;</a>
+                    <button class="collage-pic__heart--hidden collage-pic__heart--visible"><i class="fa-solid fa-heart"></i></button>
+                    <button class="collage-pic__preview--hidden collage-pic__preview--visible" onclick="preview_popup.showModal()"><i class="fa-solid fa-eye"></i></button>
+                    <button class="collage-pic__bag"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+                <div class="collage-pic">
+                    <a href="#"><img src="/Shop2/img/bo.jpg" alt="" class="collage-pic__img"></a>
+                    <a href="#" class="collage-pic__name">Bơ</a>
+                    <p>Giá: 15.000/quả</p>
+                    <div class="collage-pic__star">
+                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
                     </div>
+                    <button class="collage-pic__heart--hidden collage-pic__heart--visible"><i class="fa-solid fa-heart"></i></button>
+                    <button class="collage-pic__preview--hidden collage-pic__preview--visible" onclick="preview_popup.showModal()"><i class="fa-solid fa-eye"></i></button>
+                    <button class="collage-pic__bag"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+                <div class="collage-pic">
+                    <a href="#"><img src="/Shop2/img/cam.jpg" alt="" class="collage-pic__img"></a>
+                    <a href="#" class="collage-pic__name">Cam</a>
+                    <p>Giá: 20.000/kg</p>
+                    <div class="collage-pic__star">
+                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <button class="collage-pic__heart--hidden collage-pic__heart--visible"><i class="fa-solid fa-heart"></i></button>
+                    <button class="collage-pic__preview--hidden collage-pic__preview--visible" onclick="preview_popup.showModal()"><i class="fa-solid fa-eye"></i></button>
+                    <button class="collage-pic__bag"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+                <div class="collage-pic">
+                    <a href="#"><img src="/Shop2/img/chomchom.jpg" alt="" class="collage-pic__img"></a>
+                    <a href="#" class="collage-pic__name">Chôm chôm</a>
+                    <p>Giá: 20.000/kg</p>
+                    <div class="collage-pic__star">
+                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <button class="collage-pic__heart--hidden collage-pic__heart--visible"><i class="fa-solid fa-heart"></i></button>
+                    <button class="collage-pic__preview--hidden collage-pic__preview--visible" onclick="preview_popup.showModal()"><i class="fa-solid fa-eye"></i></button>
+                    <button class="collage-pic__bag"><i class="fa-solid fa-bag-shopping"></i></button>
                 </div>
             </div>
         </div>
     </div>
-
     <footer>
         <div class="footer__top">
             <div class="box">
@@ -278,7 +346,7 @@
                     <a class="ggplay" href="">
                         <i class="fa-brands fa-google-play ggplay__icon"></i>
                         <div class="ggplay__text">
-                            <span>Tải xuống trên</span> <br>
+                            <span>Tải xuống trên</span> <p>
                             Google Play
                         </div>
                     </a>
@@ -286,7 +354,7 @@
                     <a class="appstore" href="">
                         <i class="fa-brands fa-apple appstore__icon"></i>
                         <div class="appstore__text">
-                            <span>Tải xuống trên</span> <br>
+                            <span>Tải xuống trên</span> <p>
                             App Store
                         </div>
                     </a>
