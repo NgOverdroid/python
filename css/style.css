@@ -426,12 +426,15 @@ footer {
     margin-top: 30px;
 }
 
-.leave-comment input {
+.leave-comment input,
+.leave-comment__message {
     border: 1px solid #E6E6E6;
     border-radius: 6px;
+    outline: none;
 }
 
-.leave-comment input::placeholder {
+.leave-comment input::placeholder,
+.leave-comment__message::placeholder {
     color:  #B3B3B3;
 }
 
@@ -454,12 +457,6 @@ footer {
     min-height: 100px;
     text-indent: 10px;
     padding: 10px 0;
-    position: relative;
-}
-
-.leave-comment__message::placeholder {
-    position: absolute;
-    top: 10px;
 }
 
 .leave-comment__flex-box2 {
