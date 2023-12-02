@@ -365,7 +365,7 @@ footer {
 .blog-list__filter .popular-tag,
 .blog-list__filter .recently-added {
     border-top: 1px solid #E6E6E6;
-    padding: 5px;
+    padding: 10px;
 }
 
 .top-categories div,
