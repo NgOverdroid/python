@@ -367,6 +367,7 @@ footer {
 .contact-box__content textarea {
     border: 1px solid #E6E6E6;
     border-radius: 6px;
+    outline: none;
 }
 
 .contact-box__content input::placeholder,
@@ -381,13 +382,13 @@ footer {
 }
 
 .contact-box__content .flex-box input {
-    width: 33%;
+    width: 49%;
     height: 40px;
     text-indent: 10px;
 }
 
 .contact-box__content .contact-title {
-    width: 50%;
+    width: 100%;
     margin: 15px 0;
     height: 40px;
     text-indent: 10px;
