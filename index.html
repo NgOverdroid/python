@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -140,7 +142,6 @@
                         <input type="text" placeholder="Họ và tên" class="leave-comment__name">
                         <input type="text" placeholder="Email" class="leave-comment__email">
                     </div>
-                    <!-- <input type="text" placeholder="Hãy viết bình luận ở đây..." class="leave-comment__message"> -->
                     <textarea name="" id="" cols="30" rows="5" class="leave-comment__message" placeholder="Hãy viết bình luận ở đây..."></textarea>
                     <div class="leave-comment__flex-box2">
                         <input type="checkbox" class="checkbox">
@@ -150,7 +151,7 @@
                 </div>
                 <div class="comments">
                     <h2>Bình luận</h2>
-                    <div>
+                    <div class="comments__list">
                         <div class="comment">
                             <i class="fa-solid fa-user comment__avatar"></i>
                             <div>
@@ -158,7 +159,7 @@
                                 <p class="comment__text">Bài viết rất hữu ích! Mình mới bắt đầu chăm sóc da bằng sản phẩm hữu cơ và thực sự cần những gợi ý như thế này.</p>
                             </div>
                         </div>
-                        <hr>
+                        <hr class="hr-tag">
                         <div class="comment">
                             <i class="fa-solid fa-user comment__avatar"></i>
                             <div>
@@ -166,7 +167,7 @@
                                 <p class="comment__text">Bài viết rất chi tiết và dễ hiểu. Những hướng dẫn này giúp mình tự tin hơn trong việc chăm sóc da hữu cơ.</p>
                             </div>
                         </div>
-                        <hr>
+                        <hr class="hr-tag">
                         <div class="comment">
                             <i class="fa-solid fa-user comment__avatar"></i>
                             <div>
@@ -174,7 +175,7 @@
                                 <p class="comment__text">Mặt nạ từ mật ong và nha đam thực sự là bí quyết cho làn da mềm mại! Cảm ơn bài viết vì đã giới thiệu điều này.</p>
                             </div>
                         </div>
-                        <hr>
+                        <hr class="hr-tag">
                         <div class="comment">
                             <i class="fa-solid fa-user comment__avatar"></i>
                             <div>
@@ -182,7 +183,7 @@
                                 <p class="comment__text">Chia sẻ về chế độ ăn uống và uống nước cũng rất quan trọng. Đúng là làn da đẹp bắt nguồn từ lối sống lành mạnh.</p>
                             </div>
                         </div>
-                        <hr>
+                        <hr class="hr-tag">
                         <div class="comment">
                             <i class="fa-solid fa-user comment__avatar"></i>
                             <div>
