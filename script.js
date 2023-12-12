@@ -28,7 +28,7 @@ $(document).ready(function() {
                 </div>
                 <hr class="hr-tag">
             `;
-            $('.comments > .comments__list').prepend(newComment);
+            $('.comments__list').prepend(newComment);
 
             var commentCount = $('.comment').length;
             if (commentCount > 4) {
