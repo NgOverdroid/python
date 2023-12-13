@@ -20,7 +20,7 @@
 }
 
 .validation hr {
-    border-color: #B3B3B3;
+    border: none;
     margin: 0 10px;
     height: 16px;
 }
@@ -361,8 +361,7 @@ select{
 .addinfo{
     display: flex;
     width: 1023px;
-    box-sizing: border-box;
-    border: solid 1px #e6e6e6;
+    
     height: 456px;
     margin-top: 50px;
 }
@@ -483,6 +482,10 @@ select{
     margin-top:20px;
     margin-bottom: 20px;
 }
+.addinfo_info__info, .addinfo_info__tag--grey  {
+    color: #808080;
+}
+
 .addinfo_gallery__pic{
     width:70px;
     cursor: pointer;
@@ -525,6 +528,7 @@ select{
 }
 .description__text p, .description__text li{
     margin-bottom: 20px;
+    color: #808080;
 }
 ul{
     list-style-position: inside;
@@ -547,15 +551,17 @@ iframe{
 }
 #below_video div{
     width:250px;
+    display: flex;
+    align-items: center;
 }
 #below_video p{
-    margin:10px;
+    margin:6px;
 }
 .fa-pagelines, .fa-tags{
     float: left; 
     font-size: 30px; 
     margin: 20px 20px 20px 20px ;
-    color:#00B207
+    color:#00B207;
 } 
 
 /*Comment*/
@@ -628,16 +634,25 @@ iframe{
     border-radius: 5px;
     box-sizing: content-box;
     background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
+
 .collage-pic__img{
     width:100%;
     object-fit:fill;
     margin-bottom: 15px;
+    
 }
 .collage-pic__preview--hidden, .collage-pic__heart--hidden{
     position: absolute;
     opacity: 0;
     pointer-events: none;
+}
+.collage-pic:hover{
+    border-color: #00B207;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgb(223, 239, 223);
+    cursor: pointer;
 }
 .collage-pic:hover .collage-pic__preview--hidden, .collage-pic:hover .collage-pic__heart--hidden {
     opacity: 1;
@@ -677,6 +692,9 @@ iframe{
 .collage-pic__preview--visible:hover, .collage-pic__heart--visible:hover, .collage-pic__bag:hover{
     background-color: #00B207;
     color: white;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .collage-pic__name, .collage-pic p, .collage-pic__star{
@@ -684,7 +702,7 @@ iframe{
 }
 .collage-pic__name{
     text-decoration: none;
-    font-weight: bold;
+    color: #4d4d4d;
 }
 .collage-pic__name:visited{
     color: black;
